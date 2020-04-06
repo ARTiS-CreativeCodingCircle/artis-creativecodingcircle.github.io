@@ -1,6 +1,6 @@
 /*all*/
 $len_breakpoint: 768px;
-$len_maxp: 960px;
+$len_max: 960px;
 
 $color_theme: #00b7cc;
 $color_white: #ffffff;
@@ -17,21 +17,50 @@ body {
     "游ゴシック体", "Yu Gothic Medium", "YuGothic", "ヒラギノ角ゴシック",
     "Hiragino Sans", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN",
     "メイリオ", "Meiryo", sans-serif;
-  font-size: 1.4em;
+  font-size: 1.6rem;
+  line-height: 1.6;
   font-weight: 400;
+  color: $color_black;
+}
 
-  @media (min-width: $len_breakpoint) {
-    font-size: 1.6em;
+/*key-visual*/
+.key-visual {
+  &__img {
+    display: block;
+    width: 100%;
   }
 }
 
-p {
-  line-height: 1.6;
+/*section*/
+.section {
+  width: 80%;
+  max-width: $len_max;
+  margin: 0 auto;
+  padding: 48px 0;
+
+  &__title {
+    font-size: 32px; //古いブラウザ向け
+    font-size: 3.2rem;
+    color: $color_black;
+
+    &--ja {
+      font-size: 16px; //古いブラウザ向け
+      font-size: 1.6rem;
+      margin-left: 16px;
+      color: $color_gray;
+    }
+  }
 }
 
-/*top*/
-.top {
-  &__img {
-    width: 100vw;
+/*introduction*/
+.intro {
+  &__heading {
+    margin-top: 16px;
+    font-size: 24px; //古いブラウザ向け
+    font-size: 2.4rem;
+  }
+
+  &__text {
+    margin-top: 8px;
   }
 }
