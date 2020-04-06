@@ -64,3 +64,13 @@ body {
     margin-top: 8px;
   }
 }
+
+/*footer*/
+.footer {
+  background: $color_gray;
+  color: $color_white;
+  text-align: center;
+  font-size: 12px; //古いブラウザ向け
+  font-size: 1.2rem;
+  padding: 4px 0;
+}
