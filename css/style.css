@@ -34,13 +34,24 @@ body {
 }
 
 .section__title--ja {
+  display: block;
   font-size: 16px;
   font-size: 1.6rem;
-  margin-left: 16px;
   color: #404547;
 }
 
+@media (min-width: 768px) {
+  .section__title--ja {
+    display: inline;
+    margin-left: 16px;
+  }
+}
+
 /*introduction*/
+.intro {
+  margin-top: 32px;
+}
+
 .intro__heading {
   margin-top: 16px;
   font-size: 24px;
@@ -53,7 +64,7 @@ body {
 
 /*works*/
 .works {
-  margin-top: 16px;
+  margin-top: 32px;
   display: grid;
   gap: 32px;
   grid-template: auto/repeat(auto-fit, minmax(240px, 1fr));

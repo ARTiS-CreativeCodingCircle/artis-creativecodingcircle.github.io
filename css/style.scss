@@ -44,16 +44,22 @@ body {
     color: $color_black;
 
     &--ja {
+      display: block;
       font-size: 16px; //古いブラウザ向け
       font-size: 1.6rem;
-      margin-left: 16px;
       color: $color_gray;
+      @media (min-width: $len_breakpoint) {
+        display: inline;
+        margin-left: 16px;
+      }
     }
   }
 }
 
 /*introduction*/
 .intro {
+  margin-top: 32px;
+
   &__heading {
     margin-top: 16px;
     font-size: 24px; //古いブラウザ向け
@@ -67,7 +73,7 @@ body {
 
 /*works*/
 .works {
-  margin-top: 16px;
+  margin-top: 32px;
   display: grid;
   gap: 32px;
   grid-template: auto / repeat(auto-fit, minmax(240px, 1fr));
