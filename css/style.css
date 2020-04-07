@@ -10,7 +10,7 @@ body {
   font-size: 1.6rem;
   line-height: 1.6;
   font-weight: 400;
-  color: #383638;
+  color: #292f36;
 }
 
 /*key-visual*/
@@ -26,7 +26,7 @@ body {
   top: 0;
   left: 0;
   content: "";
-  background: rgba(56, 54, 56, 0.8);
+  background: rgba(41, 47, 54, 0.8);
   mix-blend-mode: multiply;
 }
 
@@ -58,14 +58,14 @@ body {
 .section__title {
   font-size: 32px;
   font-size: 3.2rem;
-  color: #383638;
+  color: #292f36;
 }
 
 .section__title--ja {
   display: block;
   font-size: 16px;
   font-size: 1.6rem;
-  color: #404547;
+  color: #adacb5;
 }
 
 @media (min-width: 768px) {
@@ -102,7 +102,7 @@ body {
   width: 100%;
   padding-top: 100%;
   position: relative;
-  box-shadow: 0 4px 8px rgba(56, 54, 56, 0.4);
+  box-shadow: 0 4px 8px rgba(41, 47, 54, 0.4);
   list-style-type: none;
   overflow: hidden;
 }
@@ -140,7 +140,7 @@ body {
   text-align: center;
   opacity: 0;
   background: rgba(0, 183, 204, 0.4);
-  box-shadow: 0 0 48px 16px inset rgba(56, 54, 56, 0.4);
+  box-shadow: 0 0 48px 16px inset rgba(41, 47, 54, 0.4);
   transition: all 0.8s;
 }
 
@@ -165,7 +165,7 @@ body {
 
 /*footer*/
 .footer {
-  background: #404547;
+  background: #adacb5;
   color: #ffffff;
   text-align: center;
   font-size: 12px;
