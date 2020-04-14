@@ -64,7 +64,7 @@ body {
   width: 80%;
   max-width: $len_max;
   margin: 0 auto;
-  padding: 48px 0;
+  padding-top: 64px;
 
   &__title {
     &--en {
@@ -100,7 +100,7 @@ body {
   margin-top: 32px;
 
   &__heading {
-    margin-top: 16px;
+    margin-top: 32px;
     font-size: 24px; //古いブラウザ向け
     font-size: 2.4rem;
   }
@@ -184,10 +184,11 @@ body {
 
 /*footer*/
 .footer {
+  margin-top: 64px;
+  padding: 4px 0;
   background: $color_gray;
   color: $color_white;
   text-align: center;
   font-size: 12px; //古いブラウザ向け
   font-size: 1.2rem;
-  padding: 4px 0;
 }
