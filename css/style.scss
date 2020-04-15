@@ -1,0 +1,194 @@
+/*all*/
+$len_breakpoint: 768px;
+$len_max: 960px;
+
+$color_theme: #00b7cc;
+$color_accent: #09a;
+$color_white: #ffffff;
+$color_black: #292f36;
+$color_gray: #adacb5;
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Avenir", "Lato", "Noto Sans JP", "游ゴシック Medium",
+    "游ゴシック体", "Yu Gothic Medium", "YuGothic", "ヒラギノ角ゴシック",
+    "Hiragino Sans", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN",
+    "メイリオ", "Meiryo", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-weight: 400;
+  color: $color_black;
+}
+
+/*key-visual*/
+.key-visual {
+  position: relative;
+  width: 100%;
+
+  &:before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: "";
+    background: rgba($color_black, 0.8);
+    mix-blend-mode: multiply;
+  }
+
+  &:after {
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    top: 0;
+    left: 10%;
+    content: "";
+    background-image: url(../img/artis_logo.svg);
+    //contentで画像指定するとサイズ指定のwidthが効かない。background-imageだと効く。
+    background-size: contain;
+    background-position: center;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+  }
+}
+
+/*section*/
+.section {
+  width: 80%;
+  max-width: $len_max;
+  margin: 0 auto;
+  padding-top: 64px;
+
+  &__title {
+    &--en {
+      font-size: 32px; //古いブラウザ向け
+      font-size: 3.2rem;
+      color: $color_theme;
+      background: linear-gradient(135deg, $color_theme, $color_accent);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    &--ja {
+      display: block;
+      font-size: 16px; //古いブラウザ向け
+      font-size: 1.6rem;
+      color: $color_gray;
+      @media (min-width: $len_breakpoint) {
+        display: inline;
+        margin-left: 16px;
+      }
+
+      &:before,
+      &:after {
+        content: "－";
+      }
+    }
+  }
+}
+
+/*about us*/
+.about {
+  margin-top: 32px;
+
+  &__heading {
+    margin-top: 32px;
+    font-size: 24px; //古いブラウザ向け
+    font-size: 2.4rem;
+  }
+
+  &__text {
+    margin-top: 8px;
+  }
+}
+
+/*works*/
+.works {
+  margin-top: 32px;
+  display: grid;
+  gap: 32px;
+  grid-template: auto / repeat(auto-fit, minmax(240px, 1fr));
+
+  &__card {
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+    box-shadow: 0 4px 8px rgba($color_black, 0.4);
+    list-style-type: none;
+    overflow: hidden;
+  }
+
+  &__link {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    &--twitter:after {
+      content: "Twitterで見る";
+    }
+    &--neort:after {
+      content: "NEORTで見る";
+    }
+
+    &:after {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px; //古いブラウザ向け
+      font-size: 2.4rem;
+      color: $color_white;
+      text-decoration: none;
+      text-align: center;
+      opacity: 0;
+      background: rgba($color_theme, 0.4);
+      box-shadow: 0 0 48px 16px inset rgba($color_black, 0.4);
+      transition: all 0.8s;
+    }
+
+    &:hover {
+      transition: all 0.8s;
+
+      &:after {
+        opacity: 1;
+      }
+
+      & .works__img {
+        filter: blur(4px);
+      }
+    }
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.8s;
+  }
+}
+
+/*footer*/
+.footer {
+  margin-top: 64px;
+  padding: 4px 0;
+  background: $color_gray;
+  color: $color_white;
+  text-align: center;
+  font-size: 12px; //古いブラウザ向け
+  font-size: 1.2rem;
+}

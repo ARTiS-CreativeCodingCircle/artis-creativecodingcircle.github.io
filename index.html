@@ -7,14 +7,114 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap"
+      rel="stylesheet"
+    />
+    <link href="css/ress.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.min.css" rel="stylesheet" type="text/css" />
     <!--[if lt IE 9]>
       <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <link rel="shortcut icon" href="" />
+    <base target="_blank" />
   </head>
-  <body>
-    <h1>ARTiS</h1>
+  <body class="page">
+    <div class="page__key-visual key-visual">
+      <img
+        class="key-visual__img"
+        src="https://pbs.twimg.com/media/EQpw8GHUcAErWq8.jpg"
+        alt="ARTiS"
+        onerror="this.style.paddingTop='56.25%'"
+      />
+    </div>
+    <div class="page__main main">
+      <section class="main__section section">
+        <h1 class="section__title">
+          <span class="section__title--en">ABOUT US</span>
+          <span class="section__title--ja">
+            サークル紹介
+          </span>
+        </h1>
+        <div class="section__content about">
+          <h2 class="about__heading">ARTiSとは</h2>
+          <p class="about__text">
+            ビジュアルデザイン向けのプログラミング言語（1年次で学ぶProcessingなど）を使いクリエイティブコーディングを行う、公立はこだて未来大学のサークルです。プログラミングだけでなく、視覚表現やインタラクションについて学びたい方もお待ちしています。
+          </p>
+          <h2 class="about__heading">クリエイティブコーディングとは</h2>
+          <p class="about__text">
+            プログラミング（コーディング）によってオリジナルの創造的な表現を生み出す創作活動です。
+          </p>
+          <h2 class="about__heading">活動内容</h2>
+          <p class="about__text">
+            定期的なワークショップと、年数回のミュージアム展示を予定しています。
+          </p>
+        </div>
+      </section>
+      <section class="main__section section">
+        <h1 class="section__title">
+          <span class="section__title--en">WORKS</span>
+          <span class="section__title section__title--ja">
+            作品
+          </span>
+        </h1>
+        <ul class="section__content works">
+          <li class="works__card">
+            <a
+              class="works__link works__link--twitter"
+              href="https://twitter.com/ohayoooota/status/1227918031084384256"
+            >
+              <img
+                class="works__img"
+                src="https://pbs.twimg.com/media/EQpw8GHUcAErWq8.jpg"
+              />
+            </a>
+          </li>
+          <li class="works__card">
+            <a
+              class="works__link works__link--twitter"
+              href="https://twitter.com/akane45_gun/status/1227775561679790080"
+            >
+              <img
+                class="works__img"
+                src="https://pbs.twimg.com/media/EQnvXdfVAAAiiUq.jpg"
+              />
+            </a>
+          </li>
+          <li class="works__card">
+            <a
+              class="works__link works__link--neort"
+              href="https://neort.io/art/bq30ekc3p9fefb9276q0"
+            >
+              <iframe
+                class="works__img"
+                src="https://neort.io/embed/bq7gg1s3p9f6qoqnltd0?autoStart=true&quality=1&info=true"
+                frameborder="no"
+                sandbox="allow-scripts"
+              ></iframe>
+            </a>
+          </li>
+          <li class="works__card">
+            <a
+              class="works__link works__link--twitter"
+              src="https://twitter.com/akane45_gun/status/1233648245290594305"
+            >
+              <img
+                class="works__img"
+                src="https://pbs.twimg.com/media/ER7Mif7UcAAg8ng.jpg"
+              />
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <footer class="page__footer footer">
+      &copy;&nbsp;&nbsp;2020&nbsp;&nbsp;ARTiS
+    </footer>
   </body>
 </html>
