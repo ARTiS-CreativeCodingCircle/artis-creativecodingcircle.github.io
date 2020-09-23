@@ -175,6 +175,65 @@ body {
   object-position: left top;
 }
 
+/*events*/
+.events {
+  margin-top: 32px;
+}
+
+.events__box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 100%;
+  padding-bottom: 16px;
+  gap: 24px;
+}
+
+.events__box:not(:last-child) {
+  border-bottom: 1px solid #adacb5;
+}
+
+.events__box:not(:first-child) {
+  padding-top: 16px;
+}
+
+@media (max-width: 836px) {
+  .events__box {
+    width: 100%;
+  }
+}
+
+.events__img {
+  width: 100%;
+  max-width: 320px;
+}
+
+@media (max-width: 836px) {
+  .events__img {
+    max-width: 100%;
+  }
+}
+
+.events__text {
+  flex: 1;
+}
+
+.events__name {
+  line-height: 1.2;
+}
+
+.events__period {
+  margin-top: 4px;
+}
+
+.events__description {
+  margin-top: 8px;
+}
+
+.events__link {
+  color: #00b7cc;
+}
+
 /*footer*/
 .footer {
   margin-top: 64px;
