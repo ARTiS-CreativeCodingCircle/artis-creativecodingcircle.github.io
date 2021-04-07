@@ -175,6 +175,94 @@ body {
   object-position: left top;
 }
 
+/*events*/
+.events {
+  margin-top: 32px;
+}
+
+.events__box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 100%;
+  padding-bottom: 16px;
+  gap: 24px;
+}
+
+.events__box:not(:last-child) {
+  border-bottom: 1px solid #adacb5;
+}
+
+.events__box:not(:first-child) {
+  padding-top: 16px;
+}
+
+@media (max-width: 836px) {
+  .events__box {
+    width: 100%;
+  }
+}
+
+.events__img {
+  width: 100%;
+  max-width: 320px;
+}
+
+@media (max-width: 836px) {
+  .events__img {
+    max-width: 100%;
+  }
+}
+
+.events__text {
+  flex: 1;
+}
+
+.events__name {
+  line-height: 1.2;
+}
+
+.events__period {
+  margin-top: 4px;
+}
+
+.events__description {
+  margin-top: 8px;
+}
+
+.events__link {
+  color: #00b7cc;
+}
+
+/*links*/
+.links {
+  margin-top: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.links__link {
+  color: #292f36;
+  text-decoration: none;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.links__logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+  object-fit: contain;
+}
+
+.links__text {
+  font-size: 16px;
+  font-size: 1.6rem;
+}
+
 /*footer*/
 .footer {
   margin-top: 64px;
